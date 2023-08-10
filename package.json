@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "microfront1",
+      "microfront2",
+      "shell"
+    ]
+  },
+  "scripts": {
+    "start": "lerna run --parallel start",
+    "serve": "lerna run --parallel serve",
+    "build": "lerna run build",
+    "prepare": "lerna exec npm install"
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  },
+  "dependencies": {
+    "@lerna/bootstrap": "^6.6.2"
+  },
+  "name": "microfrontend"
+}
